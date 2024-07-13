@@ -25,4 +25,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: itbeeazy/express-starter:latest
+          tags: tuanbui050999/express-starter:latest
