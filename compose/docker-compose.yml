@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  express_starter:
+    platform: linux/x86_64
+    container_name: express_starter
+    image: tuanbui050999/express-starter:latest
+    restart: always
+    environment:
+      - PORT=3030
+    expose:
+      - 3030
+    ports:
+      - 3030:3030
+    networks:
+      - express_nw
+networks:
+  express_nw:
+    driver: bridge
